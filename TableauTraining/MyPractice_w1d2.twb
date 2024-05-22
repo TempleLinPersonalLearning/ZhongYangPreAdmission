@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='範例 - 超級市場' inline='true' name='federated.0gidmqe1ifa5ms14e5aq50gzg3g6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='範例 - 超級市場' name='textscan.1xr26cy1e9yjkd1ce8bxb0zlo1xr'>
+            <connection class='textscan' directory='E:/中央/暑假/tableau教學影片/w1d1-資料源' filename='範例 - 超級市場.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xr26cy1e9yjkd1ce8bxb0zlo1xr' name='範例 - 超級市場.csv' table='[範例 - 超級市場#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='real' name='利潤率' ordinal='0' />
+            <column datatype='integer' name='記錄數' ordinal='1' />
+            <column datatype='real' name='利潤 (bin)' ordinal='2' />
+            <column datatype='real' name='利潤' ordinal='3' />
+            <column datatype='string' name='區域' ordinal='4' />
+            <column datatype='string' name='國家/地區' ordinal='5' />
+            <column datatype='string' name='城市' ordinal='6' />
+            <column datatype='string' name='子類別' ordinal='7' />
+            <column datatype='string' name='客戶名稱' ordinal='8' />
+            <column datatype='real' name='折扣' ordinal='9' />
+            <column datatype='integer' name='數量' ordinal='10' />
+            <column datatype='string' name='產品名稱' ordinal='11' />
+            <column datatype='string' name='省/自治區' ordinal='12' />
+            <column datatype='string' name='細分' ordinal='13' />
+            <column datatype='string' name='製造商' ordinal='14' />
+            <column datatype='string' name='訂單 Id' ordinal='15' />
+            <column datatype='date' name='訂單日期' ordinal='16' />
+            <column datatype='string' name='郵寄方式' ordinal='17' />
+            <column datatype='date' name='郵寄日期' ordinal='18' />
+            <column datatype='real' name='銷售額' ordinal='19' />
+            <column datatype='string' name='類別' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1xr26cy1e9yjkd1ce8bxb0zlo1xr' name='範例 - 超級市場.csv' table='[範例 - 超級市場#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='real' name='利潤率' ordinal='0' />
+            <column datatype='integer' name='記錄數' ordinal='1' />
+            <column datatype='real' name='利潤 (bin)' ordinal='2' />
+            <column datatype='real' name='利潤' ordinal='3' />
+            <column datatype='string' name='區域' ordinal='4' />
+            <column datatype='string' name='國家/地區' ordinal='5' />
+            <column datatype='string' name='城市' ordinal='6' />
+            <column datatype='string' name='子類別' ordinal='7' />
+            <column datatype='string' name='客戶名稱' ordinal='8' />
+            <column datatype='real' name='折扣' ordinal='9' />
+            <column datatype='integer' name='數量' ordinal='10' />
+            <column datatype='string' name='產品名稱' ordinal='11' />
+            <column datatype='string' name='省/自治區' ordinal='12' />
+            <column datatype='string' name='細分' ordinal='13' />
+            <column datatype='string' name='製造商' ordinal='14' />
+            <column datatype='string' name='訂單 Id' ordinal='15' />
+            <column datatype='date' name='訂單日期' ordinal='16' />
+            <column datatype='string' name='郵寄方式' ordinal='17' />
+            <column datatype='date' name='郵寄日期' ordinal='18' />
+            <column datatype='real' name='銷售額' ordinal='19' />
+            <column datatype='string' name='類別' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>利潤率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[利潤率]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>利潤率</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>記錄數</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[記錄數]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>記錄數</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>利潤 (bin)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[利潤 (bin)]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>利潤 (bin)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>利潤</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[利潤]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>利潤</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>區域</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[區域]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>區域</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>國家/地區</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[國家/地區]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>國家/地區</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>城市</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[城市]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>城市</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>子類別</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[子類別]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>子類別</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>客戶名稱</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[客戶名稱]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>客戶名稱</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>折扣</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[折扣]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>折扣</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>數量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[數量]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>數量</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>產品名稱</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[產品名稱]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>產品名稱</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>省/自治區</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[省/自治區]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>省/自治區</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>細分</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[細分]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>細分</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>製造商</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[製造商]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>製造商</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>訂單 Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[訂單 Id]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>訂單 Id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>訂單日期</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[訂單日期]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>訂單日期</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>郵寄方式</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[郵寄方式]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>郵寄方式</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>郵寄日期</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[郵寄日期]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>郵寄日期</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>銷售額</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[銷售額]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>銷售額</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>類別</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[類別]</local-name>
+            <parent-name>[範例 - 超級市場.csv]</parent-name>
+            <remote-alias>類別</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='範例 - 超級市場.csv' datatype='table' name='[__tableau_internal_object_id__].[範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E]' role='measure' type='quantitative' />
+      <column caption='利潤 (Bin)' datatype='real' name='[利潤 (bin)]' role='measure' type='quantitative' />
+      <column caption='運輸方式' datatype='string' name='[郵寄方式]' role='dimension' type='nominal' />
+      <column datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[銷售額]' role='measure' type='quantitative' />
+      <_.fcp.SchemaViewerObjectModel.false...folder name='運輸' role='dimensions'>
+        <folder-item name='[郵寄方式]' type='field' />
+        <folder-item name='[郵寄日期]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='運輸'>
+          <folder-item name='[郵寄方式]' type='field' />
+          <folder-item name='[郵寄日期]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='範例 - 超級市場.csv' id='範例 - 超級市場.csv_97194A96C61B49A68B3FE21FEC47523E'>
+            <properties context=''>
+              <relation connection='textscan.1xr26cy1e9yjkd1ce8bxb0zlo1xr' name='範例 - 超級市場.csv' table='[範例 - 超級市場#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='real' name='利潤率' ordinal='0' />
+                  <column datatype='integer' name='記錄數' ordinal='1' />
+                  <column datatype='real' name='利潤 (bin)' ordinal='2' />
+                  <column datatype='real' name='利潤' ordinal='3' />
+                  <column datatype='string' name='區域' ordinal='4' />
+                  <column datatype='string' name='國家/地區' ordinal='5' />
+                  <column datatype='string' name='城市' ordinal='6' />
+                  <column datatype='string' name='子類別' ordinal='7' />
+                  <column datatype='string' name='客戶名稱' ordinal='8' />
+                  <column datatype='real' name='折扣' ordinal='9' />
+                  <column datatype='integer' name='數量' ordinal='10' />
+                  <column datatype='string' name='產品名稱' ordinal='11' />
+                  <column datatype='string' name='省/自治區' ordinal='12' />
+                  <column datatype='string' name='細分' ordinal='13' />
+                  <column datatype='string' name='製造商' ordinal='14' />
+                  <column datatype='string' name='訂單 Id' ordinal='15' />
+                  <column datatype='date' name='訂單日期' ordinal='16' />
+                  <column datatype='string' name='郵寄方式' ordinal='17' />
+                  <column datatype='date' name='郵寄日期' ordinal='18' />
+                  <column datatype='real' name='銷售額' ordinal='19' />
+                  <column datatype='string' name='類別' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='範例 - 超級市場' name='federated.0gidmqe1ifa5ms14e5aq50gzg3g6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gidmqe1ifa5ms14e5aq50gzg3g6'>
+            <column-instance column='[銷售額]' derivation='Sum' name='[sum:銷售額:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[銷售額]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0gidmqe1ifa5ms14e5aq50gzg3g6].[sum:銷售額:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C0BCFEA6-2173-489A-8FC7-B9F526592AD5}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A12FC6BD-7D9A-4E92-AD3D-41AB108E29E9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='工作表 1' width='328'>
+      iVBORw0KGgoAAAANSUhEUgAAAUgAAAGACAYAAADPr/vqAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAal0lEQVR4nO3df3DU9Z3H8Zf3lZQktxCRX9kQ0lI5ORBJjdmQM1SMGi/UH7mrd2CBK1ec
+      WE46jhmnHT0kBbn2HB00bQ8OBoQ7UItX7VKVqCUYC8iRVLshBlOJgaDZ5EBiZE2IcN/j/gh0
+      TMg7u/mxJMDz8ReT3bz3EzJ58l2+n+83l50+ffq0AADn+LOBXgAADFYEEgAMBBIADAQSAAwE
+      EgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSiKLW1taBXgL6
+      gEACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFA
+      AoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKA
+      gUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFA
+      AoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKAgUACgIFAAoCBQAKA
+      gUACgIFAAoCBQAKA4fKBXgAA212P/HKgl3BR2/qTOd0+zhEkABgIJAAYCCQAGAgkABgIJAAY
+      CCQAGAgkABgIJAAYCCQAGAjkedeo4uX3aX1goNcBIBwCCQAGAgkABm5WcT6cOqKK7a+pZG+V
+      Dh9p1glX0ur79E5sgkaPn6KMGVmanjpBVwzpbkaLPt7/O+3eFVDg42P6vCmkk5IkR7EJwzVm
+      fIZm5N6ojAlXqLsxEWks1vJCv+ojerJPi9YsVGp3Sz9Srlf/a7v2HPhIzSdcyYlVQvJEZd7y
+      d/pW+uiI19unOWe/pqQ8LVuaq7HdvpKrYPHjWuGvU5wvX0sXpGmYE+EicVEhkFHWsn+Lnly9
+      Q8GT5z7mnmhWwx93y//H3fI7Cbr1wcd198TOz2pT9W9+rg2v1ajZ7eoVXJ1obtKh5mId2les
+      LRNm6YHFd+mq+D4sujEYYRzDcRV840n99MVadfjy3RNqPrRPxev2qWTHt/XwQznydhug/poT
+      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
+      MBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQ
+      SAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgA
+      MBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQ
+      SAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgA
+      MBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQ
+      SAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgA
+      MBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQ
+      SAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgA
+      MBBIADAQSAAwEEgAMBBIADAQSAAwEMjzrlHFy+/T+sBArwNAOAQSAAwEEgAMlw/0Ai4Jp46o
+      YvtrKtlbpcNHmnXClbT6Pr0Tm6DR46coY0aWpqdO0BVDupvRoo/3/067dwUU+PiYPm8K6aQk
+      yVFswnCNGZ+hGbk3KmPCFepuTM+WXa5X/2u79hz4SM0nXMmJVULyRGXe8nf6VvroiF9nUMxp
+      LNbyQr/qk/K0bGmuxnb7Sq6CxY9rhb9Ocb58LV2QpmFOhIvEReWy06dPnx7oRVzMWvZv0ZOr
+      dyh4MswTnQTd+uDjunti5wfaVP2bn2vDazVqdsO/XsyEWXpg8V26Kr6XC5YkuQq+8aR++mKt
+      rGXHTPi2Hn4oR95uwzGI5vQgkC2B9SpcXaaQx6dFyxYqtQ9/l62trYqLi+v159/1yC97/+II
+      a+tP5nT7OEeQUeQGi1X0ix0KujHyZv2NZt+Urq8mtujNfylU8M5Vmvv1YwpWvK3ikhLtCzbr
+      s5aupjTrYKBGzW6MRl6drqwMn6ZOSdJIj0dDHUly1RZq0KHyN7Xl17sUrN2mlUWxWvpITpij
+      JFvLntVa8WKtXMXIm/UPWvi3qRoXP6T9KDbwktb/5y4Fa1/UitUePbE4U1Y/BtuciDSVavXa
+      MoWcFOUVLOhTHHHhI5BR85l2PudXnRuntHuXaWH6MLUf3JytoKOhntGakJWn+7Pu0PEP3lDF
+      ZV3NcTRq+nw9Mj1TKV2+z3M01DNOk7LnqzBjqtYXrlZZXbF2VOfoO5N6seyWPdqwqVKuPPLl
+      L9WCtLPrljQkXuPS52vJ1ZO1cflalVVu0oY912pxZhcVGWxzIuEGVfzvL+iA62jqggeU2/1h
+      LS4BnKSJmoP68ICkxJt1e/qXfqi75GjYX+RqxjlvryVplK7PyTLi2El8qu6+faKkVtUcbOzF
+      mqXD219VpSvF+eZpblrX63aGpWnuPJ/i5Kry1e06fAHMCa9FgY0r5a9z5fHl6x97G1lcVAhk
+      tJz8Ql9I0sgrNWIAXn5EQkIvPqtRVRVHJY3SzFtTNbSbZw5NvVUzR0k6WqGqc1o82OaE17Jn
+      g9aWheSk5KlgQWrf3qbjokEgoyVmuBLiJH34oWojOLnSL07V6I3tByRnmtK/0V1ODJ9Vq6pe
+      UuJ0pY8P9+TxSp+eKKleVdWfDe45YbjBYhVtqpTrpCjve7lhThjhUkIgo2airkv3SK079cya
+      XTpyKrqvdupIuTY+tlLbj3rky/+uMnrRRzUEVS9JyePkjeDp3nHJkqT6YMPgntOdloA2rvSr
+      zvXIl/+Acnp7ZgsXJU7SRI2jSbMLlHdohfwVm/RoQYnSZ+XpWzeN6pfpbltIoeNHdfi9fdr5
+      dqmqPjohN8ar7MUP6u6pvXyD2HZCrZKSvBFWYqxXSZLqT7QN7jmmFu3ZsFZlISnpjgItiNIp
+      61AoFJW56Ltw3xsCGU2OV7k/Wq7Rz/2bNu4Kqty/SuX+9odGvl2sipHf1ORx8ZFv7A6s132r
+      yzp9MEaer05SzvzblZ2Z0qcNzY0N9b37xPoGNSr1T9uKBtucjo/5VXifv8OHnJQ83ZvrDXMi
+      raPW1tberQ0XFAIZbc5Ipc0vVOpdddqz4xXt3FWtQ6GT+qTCr1UVfjmxycqcm685PbiipKOT
+      CgUP6v2KP2hk8hXKTAl3xhydxY1J1PAo/qV5PJ7oDUefhPveEMjzxBmWoqy8+5WV16ji5YWq
+      TMpVfEOpqj76SLvWPaqyHXn6YUGukrurZOpCrVmzsP3Pp1rU3PKpGms+UPXet1VaVaxN+4q1
+      pV+upLmIfflKGvegXir8V71etlZF3iX6UQ+OIiO9OoYjzQsbJ2kGyJVpebp/ydMqeuxeZXlj
+      dLLWr58Wlaop0gFD4pWQME6Trs9W3v1L9HTRY7o3yyvVbtMThesV6PKqnO6NTUzq+SdJUlJi
+      h7ezg22Oyfma7vqnPKU4rur861QcPF/bDXChIJADbMjodM1f8rDyUhy5B7bqtepeD1L6/CV6
+      OC9FTqhMm7dWq8c/7kNjFSepPhjhRsLG9rPMcbGdTpkPtjndcLy5eiDfJ4/q9fLKjb36hwUX
+      LwI5GDhe5cxKk9OHK2DODJI35zalSgpV7u/5FSWJ7WeBVVOrgxE8/WBtjSQpyZs4uOeEEZ86
+      R/N8HilUprUb9ohG4iwCOUg4Y70aqx4cLZmDEuVNlNT0qXq2XVrS8EmakiSp6V3tC1vXw9r3
+      bpOkJE2ZNHxwzwkrXqkLCtqP4is3qag42POjb1yUCGS0uG6PfsjaDn6oevVgz5+l6X1VNUhK
+      HKPRPf7kscq4YYKkoyr9bUDd7SZsC/xWpUclTbhBGecsebDNiYDjVe73/14THVd1/pXaUk0i
+      QSCj5+gbenLZOpW8/6nCXkTTEtCzL1ZKGqVpUzr+dFf+6mfaWnEk/AxJcoMqeeYV1Uoa9Y1r
+      I7r6pLMRN8zUNEdqLdusZ9853mXk3ePv6NnNZWpVnHy33dDlteaDbU5ERszUonyfPArprXX8
+      fyQk58c//vGPB3oRF6XPa7Tj5R367//ertdLKtRwOlYJw4cpdugpHdpZqtDVszQ5/hMdLn9J
+      Pyt6SdUnJE/m95R/45gOe68a9jyj5/1v6vWSCh1q+18NjYnXVy53NOQrl5/5181VWyiomt3F
+      2rB2k3YGT0qeTH0v/0aN6WITV/VzD+qff/FrvXIkWXdc18Wh1uXjNDnpiN7+/UEdfOct/aF5
+      lK66arSGxTjt9198d4uKnvp1+3p99+oHs8Yppquvf7DN+bxGb5VWKzRskm66caL+3Pi2xYyd
+      pmsuC+itymr9oforSpvxdfO5kTh16pSGDOn9Pd5/WfJeH14d4dxz8zXdPs4dxaPFPa4PSl/Q
+      8/7y8HcTV4y82fl68O6p51wJ01JTrI0btmnfJ2GHtE/yZmvRQ7M1uat9kO5+bX6oSDtbJU/2
+      Q3pydpf3V5PkKlj6c618/n1ZF2J5/vIeFfxgZvg7gQ+WOT35lQtuUMWPr5C/TkrJ69n+yM64
+      o/jgFu6O4gQy2tw2Hav7vXaWlClQc1hHmk+ceZvoKDZhtMZPydDNf32Lpo3u7ijDVVvDAb0T
+      qFAgENDHxz5XU+hsMM/MuSpVvpzsbq+kadu7SgXPVMj1ZGrxigWaGmY3zKkjFdr+m20qfe/L
+      vwPmGs2cdadumdaT3yUzCOb06HfSSGoJtN98OOSRb9EyLezlddoEcnAjkINO+5U0wTvXaGHq
+      +XzdJpU8/rBeqO3bDzx6hkAObuECyUmaS0XjXu2ulTy+eZpDHIGIEMhLxOG9u1Ufl6Z75nC3
+      bCBSBPJS4O7X70pblDZvrtKoIxAx7uZzKXAma95TTw30KoALDoE878Yqd+magV4EgAjwFhsA
+      DAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwE
+      EgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIA
+      DAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwE
+      EgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIA
+      DAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwE
+      EgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIA
+      DAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwE
+      EgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIADAQSAAwEEgAMBBIA
+      DAQSAAz/D0evkzFhYUL8AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

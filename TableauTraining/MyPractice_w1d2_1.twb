@@ -27,7 +27,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Sample - Superstore' name='textscan.1l6342o0q3yrsm18kwp8c0gnmov4'>
-            <connection class='textscan' directory='E:/中央/暑假/tableau入門實作工作坊/w1d2-排序、群組、欄位' filename='Sample - Superstore.csv' password='' server='' />
+            <connection class='textscan' directory='D:/LearningProjects/ZhongYangPreAdmission/TableauTraining' filename='Sample - Superstore.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1l6342o0q3yrsm18kwp8c0gnmov4' name='Sample - Superstore.csv' table='[Sample - Superstore#csv]' type='table'>
@@ -685,7 +685,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='29'>
             <card type='title' />
           </strip>
         </edge>

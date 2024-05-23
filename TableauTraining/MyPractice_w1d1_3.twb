@@ -25,7 +25,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='範例 - 超級市場' name='textscan.1xr26cy1e9yjkd1ce8bxb0zlo1xr'>
-            <connection class='textscan' directory='E:/中央/暑假/tableau教學影片/w1d1-資料源' filename='範例 - 超級市場.csv' password='' server='' />
+            <connection class='textscan' directory='D:/LearningProjects/ZhongYangPreAdmission/TableauTraining' filename='範例 - 超級市場.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1xr26cy1e9yjkd1ce8bxb0zlo1xr' name='範例 - 超級市場.csv' table='[範例 - 超級市場#csv]' type='table'>
@@ -484,7 +484,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='29'>
             <card type='title' />
           </strip>
         </edge>

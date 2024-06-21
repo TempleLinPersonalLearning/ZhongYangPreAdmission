@@ -1,0 +1,1691 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='世界指標' inline='true' name='federated.0nfy1qx19539ye18inpgi1mgacsw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='世界指標' name='textscan.1qyslu71lpgwun1cynuha1j34x2u'>
+            <connection class='textscan' directory='D:/LearningProjects/ZhongYangPreAdmission/TableauTraining/w2d1_to_w2d3' filename='世界指標.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1qyslu71lpgwun1cynuha1j34x2u' name='世界指標.csv' table='[世界指標#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='string' name='高於閾值？' ordinal='0' />
+            <column datatype='real' name='人均 GDP' ordinal='1' />
+            <column datatype='string' name='出生率資料桶' ordinal='2' />
+            <column datatype='integer' name='預期壽命' ordinal='3' />
+            <column datatype='integer' name='Co2 排放量' ordinal='4' />
+            <column datatype='string' name='GDP' ordinal='5' />
+            <column datatype='integer' name='記錄數' ordinal='6' />
+            <column datatype='real' name='人口 0-14' ordinal='7' />
+            <column datatype='real' name='人口 15-64' ordinal='8' />
+            <column datatype='real' name='人口 65+' ordinal='9' />
+            <column datatype='string' name='人口總數' ordinal='10' />
+            <column datatype='real' name='人均 GDP(資料桶)' ordinal='11' />
+            <column datatype='real' name='人均醫療費用' ordinal='12' />
+            <column datatype='string' name='入境旅遊' ordinal='13' />
+            <column datatype='string' name='出境旅遊' ordinal='14' />
+            <column datatype='real' name='出生率' ordinal='15' />
+            <column datatype='string' name='區域' ordinal='16' />
+            <column datatype='string' name='經商便利度(叢集)' ordinal='17' />
+            <column datatype='string' name='國家/地區' ordinal='18' />
+            <column datatype='real' name='城市人口' ordinal='19' />
+            <column datatype='integer' name='女性預期壽命' ordinal='20' />
+            <column datatype='date' name='年份' ordinal='21' />
+            <column datatype='real' name='新生兒死亡率' ordinal='22' />
+            <column datatype='real' name='營業稅稅率' ordinal='23' />
+            <column datatype='integer' name='男性預期壽命' ordinal='24' />
+            <column datatype='string' name='經商便利度' ordinal='25' />
+            <column datatype='real' name='網際網路使用率' ordinal='26' />
+            <column datatype='integer' name='能源使用' ordinal='27' />
+            <column datatype='real' name='行動電話使用率' ordinal='28' />
+            <column datatype='real' name='貸款利率' ordinal='29' />
+            <column datatype='integer' name='辦稅小時數' ordinal='30' />
+            <column datatype='real' name='醫療費用 % Gdp' ordinal='31' />
+            <column datatype='integer' name='開業天數' ordinal='32' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1qyslu71lpgwun1cynuha1j34x2u' name='世界指標.csv' table='[世界指標#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='string' name='高於閾值？' ordinal='0' />
+            <column datatype='real' name='人均 GDP' ordinal='1' />
+            <column datatype='string' name='出生率資料桶' ordinal='2' />
+            <column datatype='integer' name='預期壽命' ordinal='3' />
+            <column datatype='integer' name='Co2 排放量' ordinal='4' />
+            <column datatype='string' name='GDP' ordinal='5' />
+            <column datatype='integer' name='記錄數' ordinal='6' />
+            <column datatype='real' name='人口 0-14' ordinal='7' />
+            <column datatype='real' name='人口 15-64' ordinal='8' />
+            <column datatype='real' name='人口 65+' ordinal='9' />
+            <column datatype='string' name='人口總數' ordinal='10' />
+            <column datatype='real' name='人均 GDP(資料桶)' ordinal='11' />
+            <column datatype='real' name='人均醫療費用' ordinal='12' />
+            <column datatype='string' name='入境旅遊' ordinal='13' />
+            <column datatype='string' name='出境旅遊' ordinal='14' />
+            <column datatype='real' name='出生率' ordinal='15' />
+            <column datatype='string' name='區域' ordinal='16' />
+            <column datatype='string' name='經商便利度(叢集)' ordinal='17' />
+            <column datatype='string' name='國家/地區' ordinal='18' />
+            <column datatype='real' name='城市人口' ordinal='19' />
+            <column datatype='integer' name='女性預期壽命' ordinal='20' />
+            <column datatype='date' name='年份' ordinal='21' />
+            <column datatype='real' name='新生兒死亡率' ordinal='22' />
+            <column datatype='real' name='營業稅稅率' ordinal='23' />
+            <column datatype='integer' name='男性預期壽命' ordinal='24' />
+            <column datatype='string' name='經商便利度' ordinal='25' />
+            <column datatype='real' name='網際網路使用率' ordinal='26' />
+            <column datatype='integer' name='能源使用' ordinal='27' />
+            <column datatype='real' name='行動電話使用率' ordinal='28' />
+            <column datatype='real' name='貸款利率' ordinal='29' />
+            <column datatype='integer' name='辦稅小時數' ordinal='30' />
+            <column datatype='real' name='醫療費用 % Gdp' ordinal='31' />
+            <column datatype='integer' name='開業天數' ordinal='32' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>高於閾值？</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[高於閾值？]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>高於閾值？</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人均 GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[人均 GDP]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人均 GDP</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>出生率資料桶</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[出生率資料桶]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>出生率資料桶</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>預期壽命</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[預期壽命]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>預期壽命</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Co2 排放量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Co2 排放量]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>Co2 排放量</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GDP]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>GDP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>記錄數</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[記錄數]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>記錄數</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口 0-14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[人口 0-14]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人口 0-14</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口 15-64</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[人口 15-64]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人口 15-64</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口 65+</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[人口 65+]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人口 65+</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口總數</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[人口總數]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人口總數</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人均 GDP(資料桶)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[人均 GDP(資料桶)]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人均 GDP(資料桶)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人均醫療費用</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[人均醫療費用]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>人均醫療費用</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>入境旅遊</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[入境旅遊]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>入境旅遊</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>出境旅遊</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[出境旅遊]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>出境旅遊</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>出生率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[出生率]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>出生率</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>區域</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[區域]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>區域</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>經商便利度(叢集)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[經商便利度(叢集)]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>經商便利度(叢集)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>國家/地區</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[國家/地區]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>國家/地區</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>城市人口</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[城市人口]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>城市人口</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>女性預期壽命</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[女性預期壽命]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>女性預期壽命</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>年份</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[年份]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>年份</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>新生兒死亡率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[新生兒死亡率]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>新生兒死亡率</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>營業稅稅率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[營業稅稅率]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>營業稅稅率</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>男性預期壽命</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[男性預期壽命]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>男性預期壽命</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>經商便利度</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[經商便利度]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>經商便利度</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>網際網路使用率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[網際網路使用率]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>網際網路使用率</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>能源使用</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[能源使用]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>能源使用</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>行動電話使用率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[行動電話使用率]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>行動電話使用率</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>貸款利率</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[貸款利率]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>貸款利率</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>辦稅小時數</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[辦稅小時數]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>辦稅小時數</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>醫療費用 % Gdp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[醫療費用 % Gdp]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>醫療費用 % Gdp</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>開業天數</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[開業天數]</local-name>
+            <parent-name>[世界指標.csv]</parent-name>
+            <remote-alias>開業天數</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='GPD計算 1' datatype='real' name='[Calculation_4943826522376818690]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF RIGHT([GDP], 1) = &quot;B&quot; THEN &#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 2)) * 1000000000&#13;&#10;ELSEIF RIGHT([GDP], 1) = &quot;M&quot; THEN &#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 2)) * 1000000&#13;&#10;ELSEIF RIGHT([GDP], 1) = &quot;K&quot; THEN &#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 2)) * 1000&#13;&#10;ELSE&#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 1))&#13;&#10;END' />
+      </column>
+      <column caption='人口總數計算 1' datatype='real' name='[Calculation_4943826522379284484]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF RIGHT([人口總數], 1) = &quot;B&quot; THEN &#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 2)) * 1000000000&#13;&#10;ELSEIF RIGHT([人口總數], 1) = &quot;M&quot; THEN &#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 2)) * 1000000&#13;&#10;ELSEIF RIGHT([人口總數], 1) = &quot;K&quot; THEN &#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 2)) * 1000&#13;&#10;ELSE&#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 1))&#13;&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='世界指標.csv' datatype='table' name='[__tableau_internal_object_id__].[世界指標.csv_A83668F7EFC34F5C927E706F4391AB38]' role='measure' type='quantitative' />
+      <column caption='人均 Gdp(資料桶)' datatype='real' name='[人均 GDP(資料桶)]' role='measure' type='quantitative' />
+      <column caption='人均 Gdp' datatype='real' name='[人均 GDP]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='高於閾值？' />
+        <field-sort-custom-order field='人均 GDP' />
+        <field-sort-custom-order field='出生率資料桶' />
+        <field-sort-custom-order field='預期壽命' />
+        <field-sort-custom-order field='Co2 排放量' />
+        <field-sort-custom-order field='GDP' />
+        <field-sort-custom-order field='Calculation_4943826522376818690' />
+        <field-sort-custom-order field='記錄數' />
+        <field-sort-custom-order field='人口 0-14' />
+        <field-sort-custom-order field='人口 15-64' />
+        <field-sort-custom-order field='人口 65+' />
+        <field-sort-custom-order field='人口總數' />
+        <field-sort-custom-order field='Calculation_4943826522379284484' />
+        <field-sort-custom-order field='人均 GDP(資料桶)' />
+        <field-sort-custom-order field='人均醫療費用' />
+        <field-sort-custom-order field='入境旅遊' />
+        <field-sort-custom-order field='出境旅遊' />
+        <field-sort-custom-order field='出生率' />
+        <field-sort-custom-order field='區域' />
+        <field-sort-custom-order field='經商便利度(叢集)' />
+        <field-sort-custom-order field='國家/地區' />
+        <field-sort-custom-order field='城市人口' />
+        <field-sort-custom-order field='女性預期壽命' />
+        <field-sort-custom-order field='年份' />
+        <field-sort-custom-order field='新生兒死亡率' />
+        <field-sort-custom-order field='營業稅稅率' />
+        <field-sort-custom-order field='男性預期壽命' />
+        <field-sort-custom-order field='經商便利度' />
+        <field-sort-custom-order field='網際網路使用率' />
+        <field-sort-custom-order field='能源使用' />
+        <field-sort-custom-order field='行動電話使用率' />
+        <field-sort-custom-order field='貸款利率' />
+        <field-sort-custom-order field='辦稅小時數' />
+        <field-sort-custom-order field='醫療費用 % Gdp' />
+        <field-sort-custom-order field='開業天數' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='世界指標.csv' id='世界指標.csv_A83668F7EFC34F5C927E706F4391AB38'>
+            <properties context=''>
+              <relation connection='textscan.1qyslu71lpgwun1cynuha1j34x2u' name='世界指標.csv' table='[世界指標#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='string' name='高於閾值？' ordinal='0' />
+                  <column datatype='real' name='人均 GDP' ordinal='1' />
+                  <column datatype='string' name='出生率資料桶' ordinal='2' />
+                  <column datatype='integer' name='預期壽命' ordinal='3' />
+                  <column datatype='integer' name='Co2 排放量' ordinal='4' />
+                  <column datatype='string' name='GDP' ordinal='5' />
+                  <column datatype='integer' name='記錄數' ordinal='6' />
+                  <column datatype='real' name='人口 0-14' ordinal='7' />
+                  <column datatype='real' name='人口 15-64' ordinal='8' />
+                  <column datatype='real' name='人口 65+' ordinal='9' />
+                  <column datatype='string' name='人口總數' ordinal='10' />
+                  <column datatype='real' name='人均 GDP(資料桶)' ordinal='11' />
+                  <column datatype='real' name='人均醫療費用' ordinal='12' />
+                  <column datatype='string' name='入境旅遊' ordinal='13' />
+                  <column datatype='string' name='出境旅遊' ordinal='14' />
+                  <column datatype='real' name='出生率' ordinal='15' />
+                  <column datatype='string' name='區域' ordinal='16' />
+                  <column datatype='string' name='經商便利度(叢集)' ordinal='17' />
+                  <column datatype='string' name='國家/地區' ordinal='18' />
+                  <column datatype='real' name='城市人口' ordinal='19' />
+                  <column datatype='integer' name='女性預期壽命' ordinal='20' />
+                  <column datatype='date' name='年份' ordinal='21' />
+                  <column datatype='real' name='新生兒死亡率' ordinal='22' />
+                  <column datatype='real' name='營業稅稅率' ordinal='23' />
+                  <column datatype='integer' name='男性預期壽命' ordinal='24' />
+                  <column datatype='string' name='經商便利度' ordinal='25' />
+                  <column datatype='real' name='網際網路使用率' ordinal='26' />
+                  <column datatype='integer' name='能源使用' ordinal='27' />
+                  <column datatype='real' name='行動電話使用率' ordinal='28' />
+                  <column datatype='real' name='貸款利率' ordinal='29' />
+                  <column datatype='integer' name='辦稅小時數' ordinal='30' />
+                  <column datatype='real' name='醫療費用 % Gdp' ordinal='31' />
+                  <column datatype='integer' name='開業天數' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Superstore-2019' inline='true' name='federated.0qkhd050ke55i81950h2s1n41mm9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Superstore-2019' name='excel-direct.1dl2rts165bimj1ezk5up16iom6f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/LearningProjects/ZhongYangPreAdmission/TableauTraining/Superstore-2019.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1dl2rts165bimj1ezk5up16iom6f' name='Orders Superstore_2019_orders' table='[Orders$Superstore_2019_orders]' type='table'>
+          <columns gridOrigin='A1:Q11001:no:A1:W2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='Customer Name' ordinal='2' />
+            <column datatype='real' name='Discount' ordinal='3' />
+            <column datatype='string' name='Manufacturer' ordinal='4' />
+            <column datatype='string' name='Order ID' ordinal='5' />
+            <column datatype='string' name='Product Name' ordinal='6' />
+            <column datatype='integer' name='Profit' ordinal='7' />
+            <column datatype='integer' name='Quantity' ordinal='8' />
+            <column datatype='string' name='Region' ordinal='9' />
+            <column datatype='integer' name='Sales' ordinal='10' />
+            <column datatype='string' name='Segment' ordinal='11' />
+            <column datatype='date' name='Order Date' ordinal='12' />
+            <column datatype='date' name='Ship Date' ordinal='13' />
+            <column datatype='string' name='Ship Mode' ordinal='14' />
+            <column datatype='string' name='State' ordinal='15' />
+            <column datatype='string' name='Sub-Category' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1dl2rts165bimj1ezk5up16iom6f' name='Orders Superstore_2019_orders' table='[Orders$Superstore_2019_orders]' type='table'>
+          <columns gridOrigin='A1:Q11001:no:A1:W2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='Customer Name' ordinal='2' />
+            <column datatype='real' name='Discount' ordinal='3' />
+            <column datatype='string' name='Manufacturer' ordinal='4' />
+            <column datatype='string' name='Order ID' ordinal='5' />
+            <column datatype='string' name='Product Name' ordinal='6' />
+            <column datatype='integer' name='Profit' ordinal='7' />
+            <column datatype='integer' name='Quantity' ordinal='8' />
+            <column datatype='string' name='Region' ordinal='9' />
+            <column datatype='integer' name='Sales' ordinal='10' />
+            <column datatype='string' name='Segment' ordinal='11' />
+            <column datatype='date' name='Order Date' ordinal='12' />
+            <column datatype='date' name='Ship Date' ordinal='13' />
+            <column datatype='string' name='Ship Mode' ordinal='14' />
+            <column datatype='string' name='State' ordinal='15' />
+            <column datatype='string' name='Sub-Category' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q11001:no:A1:W2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Manufacturer]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Manufacturer</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders Superstore_2019_orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders Superstore_2019_orders' datatype='table' name='[__tableau_internal_object_id__].[Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders Superstore_2019_orders' id='Orders$Superstore!2019!orders_E319D142DB704DEFB3C13937CBC6510C'>
+            <properties context=''>
+              <relation connection='excel-direct.1dl2rts165bimj1ezk5up16iom6f' name='Orders Superstore_2019_orders' table='[Orders$Superstore_2019_orders]' type='table'>
+                <columns gridOrigin='A1:Q11001:no:A1:W2147483647:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Category' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='Customer Name' ordinal='2' />
+                  <column datatype='real' name='Discount' ordinal='3' />
+                  <column datatype='string' name='Manufacturer' ordinal='4' />
+                  <column datatype='string' name='Order ID' ordinal='5' />
+                  <column datatype='string' name='Product Name' ordinal='6' />
+                  <column datatype='integer' name='Profit' ordinal='7' />
+                  <column datatype='integer' name='Quantity' ordinal='8' />
+                  <column datatype='string' name='Region' ordinal='9' />
+                  <column datatype='integer' name='Sales' ordinal='10' />
+                  <column datatype='string' name='Segment' ordinal='11' />
+                  <column datatype='date' name='Order Date' ordinal='12' />
+                  <column datatype='date' name='Ship Date' ordinal='13' />
+                  <column datatype='string' name='Ship Mode' ordinal='14' />
+                  <column datatype='string' name='State' ordinal='15' />
+                  <column datatype='string' name='Sub-Category' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sample - Superstore (Sample - Superstore)' inline='true' name='federated.0t3nor01drkyih12gifd10hpzo8v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore' name='excel-direct.0vurcjw0wdnbqd0zvg8a20l5iat7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/LearningProjects/ZhongYangPreAdmission/TableauTraining/w2d1_to_w2d3/Sample - Superstore.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0vurcjw0wdnbqd0zvg8a20l5iat7' name='Sample - Superstore' table='[&apos;Sample - Superstore$&apos;]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='real' name='Profit Ratio' ordinal='0' />
+            <column datatype='string' name='Category' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='Country/Region' ordinal='3' />
+            <column datatype='string' name='Customer Name' ordinal='4' />
+            <column datatype='real' name='Discount' ordinal='5' />
+            <column datatype='integer' name='記錄數' ordinal='6' />
+            <column datatype='date' name='Order Date' ordinal='7' />
+            <column datatype='string' name='Order ID' ordinal='8' />
+            <column datatype='integer' name='Postal Code' ordinal='9' />
+            <column datatype='string' name='Manufacturer' ordinal='10' />
+            <column datatype='string' name='Product Name' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+            <column datatype='integer' name='Quantity' ordinal='13' />
+            <column datatype='string' name='Region' ordinal='14' />
+            <column datatype='integer' name='Sales' ordinal='15' />
+            <column datatype='string' name='Segment' ordinal='16' />
+            <column datatype='date' name='Ship Date' ordinal='17' />
+            <column datatype='string' name='Ship Mode' ordinal='18' />
+            <column datatype='string' name='State' ordinal='19' />
+            <column datatype='string' name='Sub-Category' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0vurcjw0wdnbqd0zvg8a20l5iat7' name='Sample - Superstore' table='[&apos;Sample - Superstore$&apos;]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='real' name='Profit Ratio' ordinal='0' />
+            <column datatype='string' name='Category' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='Country/Region' ordinal='3' />
+            <column datatype='string' name='Customer Name' ordinal='4' />
+            <column datatype='real' name='Discount' ordinal='5' />
+            <column datatype='integer' name='記錄數' ordinal='6' />
+            <column datatype='date' name='Order Date' ordinal='7' />
+            <column datatype='string' name='Order ID' ordinal='8' />
+            <column datatype='integer' name='Postal Code' ordinal='9' />
+            <column datatype='string' name='Manufacturer' ordinal='10' />
+            <column datatype='string' name='Product Name' ordinal='11' />
+            <column datatype='integer' name='Profit' ordinal='12' />
+            <column datatype='integer' name='Quantity' ordinal='13' />
+            <column datatype='string' name='Region' ordinal='14' />
+            <column datatype='integer' name='Sales' ordinal='15' />
+            <column datatype='string' name='Segment' ordinal='16' />
+            <column datatype='date' name='Ship Date' ordinal='17' />
+            <column datatype='string' name='Ship Mode' ordinal='18' />
+            <column datatype='string' name='State' ordinal='19' />
+            <column datatype='string' name='Sub-Category' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit Ratio]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Profit Ratio</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country/Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country/Region]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Country/Region</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>記錄數</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[記錄數]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>記錄數</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Manufacturer]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Manufacturer</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Sample - Superstore]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RTW_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='City, State' datatype='string' name='[Calculation_4943826522399047687]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[City] + &apos;, &apos; + [State]' />
+      </column>
+      <column caption='City, State, Postal Code' datatype='string' name='[Calculation_4943826522399416328]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[City] + &apos;, &apos; + [State] + &apos; &apos; + STR([Postal Code])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sample - Superstore' datatype='table' name='[__tableau_internal_object_id__].[Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sample - Superstore' id='Sample - Superstore_38C2F5ECDAD34AE2809C6906ECB2F1D0'>
+            <properties context=''>
+              <relation connection='excel-direct.0vurcjw0wdnbqd0zvg8a20l5iat7' name='Sample - Superstore' table='[&apos;Sample - Superstore$&apos;]' type='table'>
+                <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+                  <column datatype='real' name='Profit Ratio' ordinal='0' />
+                  <column datatype='string' name='Category' ordinal='1' />
+                  <column datatype='string' name='City' ordinal='2' />
+                  <column datatype='string' name='Country/Region' ordinal='3' />
+                  <column datatype='string' name='Customer Name' ordinal='4' />
+                  <column datatype='real' name='Discount' ordinal='5' />
+                  <column datatype='integer' name='記錄數' ordinal='6' />
+                  <column datatype='date' name='Order Date' ordinal='7' />
+                  <column datatype='string' name='Order ID' ordinal='8' />
+                  <column datatype='integer' name='Postal Code' ordinal='9' />
+                  <column datatype='string' name='Manufacturer' ordinal='10' />
+                  <column datatype='string' name='Product Name' ordinal='11' />
+                  <column datatype='integer' name='Profit' ordinal='12' />
+                  <column datatype='integer' name='Quantity' ordinal='13' />
+                  <column datatype='string' name='Region' ordinal='14' />
+                  <column datatype='integer' name='Sales' ordinal='15' />
+                  <column datatype='string' name='Segment' ordinal='16' />
+                  <column datatype='date' name='Ship Date' ordinal='17' />
+                  <column datatype='string' name='Ship Mode' ordinal='18' />
+                  <column datatype='string' name='State' ordinal='19' />
+                  <column datatype='string' name='Sub-Category' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DB0CDB60-C7D1-490E-8AC5-23048B0E9BBB}' />
+    </worksheet>
+    <worksheet name='聯集欄位'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore (Sample - Superstore)' name='federated.0t3nor01drkyih12gifd10hpzo8v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t3nor01drkyih12gifd10hpzo8v'>
+            <column caption='City, State' datatype='string' name='[Calculation_4943826522399047687]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[City] + &apos;, &apos; + [State]' />
+            </column>
+            <column caption='City, State, Postal Code' datatype='string' name='[Calculation_4943826522399416328]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[City] + &apos;, &apos; + [State] + &apos; &apos; + STR([Postal Code])' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Calculation_4943826522399047687]' derivation='None' name='[none:Calculation_4943826522399047687:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4943826522399416328]' derivation='None' name='[none:Calculation_4943826522399416328:nk]' pivot='key' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Postal Code]' derivation='None' name='[none:Postal Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0t3nor01drkyih12gifd10hpzo8v].[none:Calculation_4943826522399047687:nk]' value='208' />
+            <format attr='width' field='[federated.0t3nor01drkyih12gifd10hpzo8v].[none:Calculation_4943826522399416328:nk]' value='268' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0t3nor01drkyih12gifd10hpzo8v].[none:Calculation_4943826522399416328:nk] / ([federated.0t3nor01drkyih12gifd10hpzo8v].[none:Calculation_4943826522399047687:nk] / ([federated.0t3nor01drkyih12gifd10hpzo8v].[none:City:nk] / ([federated.0t3nor01drkyih12gifd10hpzo8v].[none:State:nk] / [federated.0t3nor01drkyih12gifd10hpzo8v].[none:Postal Code:ok]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CBB82295-B536-4583-ADDC-B2E63DF14932}' />
+    </worksheet>
+    <worksheet name='計算欄位_人均GDP'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='世界指標' name='federated.0nfy1qx19539ye18inpgi1mgacsw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nfy1qx19539ye18inpgi1mgacsw'>
+            <column caption='GPD計算 1' datatype='real' name='[Calculation_4943826522376818690]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF RIGHT([GDP], 1) = &quot;B&quot; THEN &#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 2)) * 1000000000&#13;&#10;ELSEIF RIGHT([GDP], 1) = &quot;M&quot; THEN &#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 2)) * 1000000&#13;&#10;ELSEIF RIGHT([GDP], 1) = &quot;K&quot; THEN &#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 2)) * 1000&#13;&#10;ELSE&#13;&#10;    FLOAT(MID([GDP], 2, LEN([GDP]) - 1))&#13;&#10;END' />
+            </column>
+            <column caption='人口總數計算 1' datatype='real' name='[Calculation_4943826522379284484]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF RIGHT([人口總數], 1) = &quot;B&quot; THEN &#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 2)) * 1000000000&#13;&#10;ELSEIF RIGHT([人口總數], 1) = &quot;M&quot; THEN &#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 2)) * 1000000&#13;&#10;ELSEIF RIGHT([人口總數], 1) = &quot;K&quot; THEN &#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 2)) * 1000&#13;&#10;ELSE&#13;&#10;    FLOAT(MID([人口總數], 2, LEN([人口總數]) - 1))&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[GDP]' role='dimension' type='nominal' />
+            <column-instance column='[國家/地區]' derivation='None' name='[none:國家/地區:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4943826522376818690]' derivation='Sum' name='[sum:Calculation_4943826522376818690:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4943826522379284484]' derivation='Sum' name='[sum:Calculation_4943826522379284484:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[人口總數]' role='dimension' type='nominal' />
+            <column datatype='string' name='[國家/地區]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0nfy1qx19539ye18inpgi1mgacsw].[none:國家/地區:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0nfy1qx19539ye18inpgi1mgacsw].[sum:Calculation_4943826522376818690:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0nfy1qx19539ye18inpgi1mgacsw].[sum:Calculation_4943826522376818690:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0nfy1qx19539ye18inpgi1mgacsw].[sum:Calculation_4943826522379284484:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nfy1qx19539ye18inpgi1mgacsw].[none:國家/地區:nk]</rows>
+        <cols>([federated.0nfy1qx19539ye18inpgi1mgacsw].[sum:Calculation_4943826522376818690:qk] + [federated.0nfy1qx19539ye18inpgi1mgacsw].[sum:Calculation_4943826522379284484:qk])</cols>
+      </table>
+      <simple-id uuid='{8BC7816D-B11E-4D87-9F9D-3E0448A12E74}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='計算欄位_人均GDP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{095CE96D-0F5A-423C-948E-1DEEFBEDF31A}' />
+    </window>
+    <window class='worksheet' name='聯集欄位'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D80213DF-54A9-4492-ADEA-56D95F47EC89}' />
+    </window>
+    <window class='worksheet' maximized='true' name='工作表 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D63C41A6-54FD-4A37-9ED8-E6F71064B9EA}' />
+    </window>
+  </windows>
+</workbook>

@@ -698,8 +698,11 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column caption='Profit Margin' datatype='real' name='[Calculation_2614621090573168641]' role='measure' type='quantitative'>
+      <column caption='Profit Margin' datatype='real' default-format='p0%' name='[Calculation_2614621090573168641]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+      </column>
+      <column caption='Order Type' datatype='string' name='[Calculation_2614621090575777794]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT([Order ID], 3)' />
       </column>
       <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
@@ -900,16 +903,30 @@
       <simple-id uuid='{8026A90D-6AB7-4D2B-BB14-256603DF83CD}' />
     </worksheet>
     <worksheet name='W2D2Q1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>Sheet Name</run>
+            <run>&gt; - Tables has the lowest Profit Margin.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
             <datasource caption='Superstore_2019_orders (Superstore-2019)' name='federated.1d6libd0wo0yw414nitkh16m21y2' />
           </datasources>
           <datasource-dependencies datasource='federated.1d6libd0wo0yw414nitkh16m21y2'>
+            <column caption='Profit Margin' datatype='real' default-format='p0%' name='[Calculation_2614621090573168641]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
+            </column>
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
             <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
             <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
             <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
             <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2614621090573168641]' derivation='User' name='[usr:Calculation_2614621090573168641:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
@@ -920,10 +937,14 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090573168641:qk]' />
+              <text column='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090573168641:qk]' />
+            </encodings>
             <style>
               <style-rule element='mark'>
                 <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-labels-show' value='true' />
               </style-rule>
             </style>
           </pane>
@@ -932,6 +953,37 @@
         <cols>[federated.1d6libd0wo0yw414nitkh16m21y2].[none:Sub-Category:nk]</cols>
       </table>
       <simple-id uuid='{3E8990DB-B3A1-4118-9F3D-BDC93A216C89}' />
+    </worksheet>
+    <worksheet name='W2D2Q2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_2019_orders (Superstore-2019)' name='federated.1d6libd0wo0yw414nitkh16m21y2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d6libd0wo0yw414nitkh16m21y2'>
+            <column caption='Order Type' datatype='string' name='[Calculation_2614621090575777794]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='LEFT([Order ID], 3)' />
+            </column>
+            <column datatype='string' name='[Order ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2614621090575777794]' derivation='None' name='[none:Calculation_2614621090575777794:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1d6libd0wo0yw414nitkh16m21y2].[none:Region:nk] / [federated.1d6libd0wo0yw414nitkh16m21y2].[none:Calculation_2614621090575777794:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E4F8C3E3-EF8B-4C38-8E83-A5B716E976D8}' />
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='63'>
@@ -951,7 +1003,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='29'>
             <card type='title' />
           </strip>
         </edge>
@@ -990,7 +1042,38 @@
       </viewpoint>
       <simple-id uuid='{7721AB64-3665-49C9-B3B6-097C5DF6B437}' />
     </window>
-    <window class='worksheet' maximized='true' name='W2D2Q1'>
+    <window class='worksheet' name='W2D2Q1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090573168641:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0210436E-EEDB-4501-9B2A-C41FB0A08B55}' />
+    </window>
+    <window class='worksheet' maximized='true' name='W2D2Q2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1011,7 +1094,7 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{0210436E-EEDB-4501-9B2A-C41FB0A08B55}' />
+      <simple-id uuid='{41B27912-6488-4E32-9013-5911AB124959}' />
     </window>
   </windows>
 </workbook>

@@ -704,9 +704,17 @@
       <column caption='Order Type' datatype='string' name='[Calculation_2614621090575777794]' role='dimension' type='nominal'>
         <calculation class='tableau' formula='LEFT([Order ID], 3)' />
       </column>
+      <column caption='Distinct count of Order ID' datatype='integer' name='[Calculation_2614621090576674819]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Order ID])' />
+      </column>
+      <column caption='Profit Color Condition' datatype='string' name='[Calculation_2614621090578243588]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF SUM([Profit]) &gt; 15000 &#13;&#10;THEN &apos;GREEN&apos;&#13;&#10;ELSEIF SUM([Profit]) &gt; 1000 &#13;&#10;THEN &apos;AMBER&apos;&#13;&#10;ELSE &apos;RED&apos;&#13;&#10;END' />
+      </column>
       <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='Orders Superstore_2019_orders' datatype='table' name='[__tableau_internal_object_id__].[Orders$Superstore!2019!orders_36BBF7EF25744B75B6C59878DC49EFBE]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_2614621090578243588]' derivation='None' name='[none:Calculation_2614621090578243588:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2614621090578243588]' derivation='User' name='[usr:Calculation_2614621090578243588:nk]' pivot='key' type='nominal' />
       <drill-paths>
         <drill-path name='State, City'>
           <field>[State]</field>
@@ -714,6 +722,43 @@
         </drill-path>
       </drill-paths>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_2614621090578243588:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Amber&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AMBER&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RED&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Calculation_2614621090578243588:nk]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;AMBER&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Amber&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;RED&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[usr:Calculation_2614621090578243588:nk]' type='shape'>
+            <map to=':filled/circle'>
+              <bucket>&quot;GREEN&quot;</bucket>
+            </map>
+            <map to=':filled/plus'>
+              <bucket>&quot;AMBER&quot;</bucket>
+            </map>
+            <map to=':filled/times'>
+              <bucket>&quot;RED&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
       </semantic-values>
@@ -964,10 +1009,14 @@
             <column caption='Order Type' datatype='string' name='[Calculation_2614621090575777794]' role='dimension' type='nominal'>
               <calculation class='tableau' formula='LEFT([Order ID], 3)' />
             </column>
+            <column caption='Distinct count of Order ID' datatype='integer' name='[Calculation_2614621090576674819]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Order ID])' />
+            </column>
             <column datatype='string' name='[Order ID]' role='dimension' type='nominal' />
             <column datatype='string' name='[Region]' role='dimension' type='nominal' />
             <column-instance column='[Calculation_2614621090575777794]' derivation='None' name='[none:Calculation_2614621090575777794:nk]' pivot='key' type='nominal' />
             <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2614621090576674819]' derivation='User' name='[usr:Calculation_2614621090576674819:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
@@ -978,12 +1027,52 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1d6libd0wo0yw414nitkh16m21y2].[none:Calculation_2614621090575777794:nk]' />
+            </encodings>
           </pane>
         </panes>
         <rows>([federated.1d6libd0wo0yw414nitkh16m21y2].[none:Region:nk] / [federated.1d6libd0wo0yw414nitkh16m21y2].[none:Calculation_2614621090575777794:nk])</rows>
-        <cols />
+        <cols>[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090576674819:qk]</cols>
       </table>
       <simple-id uuid='{E4F8C3E3-EF8B-4C38-8E83-A5B716E976D8}' />
+    </worksheet>
+    <worksheet name='W2D2Q3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Superstore_2019_orders (Superstore-2019)' name='federated.1d6libd0wo0yw414nitkh16m21y2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1d6libd0wo0yw414nitkh16m21y2'>
+            <column caption='Profit Color Condition' datatype='string' name='[Calculation_2614621090578243588]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF SUM([Profit]) &gt; 15000 &#13;&#10;THEN &apos;GREEN&apos;&#13;&#10;ELSEIF SUM([Profit]) &gt; 1000 &#13;&#10;THEN &apos;AMBER&apos;&#13;&#10;ELSE &apos;RED&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2614621090578243588]' derivation='User' name='[usr:Calculation_2614621090578243588:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090578243588:nk]' />
+              <shape column='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090578243588:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1d6libd0wo0yw414nitkh16m21y2].[none:Sub-Category:nk]</rows>
+        <cols>[federated.1d6libd0wo0yw414nitkh16m21y2].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B4E23C53-AA33-40C1-8FB7-B5EEE79CD655}' />
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='63'>
@@ -1073,7 +1162,7 @@
       </viewpoint>
       <simple-id uuid='{0210436E-EEDB-4501-9B2A-C41FB0A08B55}' />
     </window>
-    <window class='worksheet' maximized='true' name='W2D2Q2'>
+    <window class='worksheet' name='W2D2Q2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1093,8 +1182,45 @@
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1d6libd0wo0yw414nitkh16m21y2].[none:Calculation_2614621090575777794:nk]' type='color' />
+          </strip>
+        </edge>
       </cards>
       <simple-id uuid='{41B27912-6488-4E32-9013-5911AB124959}' />
+    </window>
+    <window class='worksheet' maximized='true' name='W2D2Q3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090578243588:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1d6libd0wo0yw414nitkh16m21y2].[usr:Calculation_2614621090578243588:nk]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F53EDA71-E7DD-406C-95DA-9D74BC011430}' />
     </window>
   </windows>
 </workbook>
